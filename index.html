@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>The Long Road Home</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="game-container"></div>
+
+    <!-- Phaser 3 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
+
+    <!-- Game Scripts -->
+    <script src="src/config/gameConfig.js"></script>
+    <script src="src/utils/SaveManager.js"></script>
+    <script src="src/utils/DialogueManager.js"></script>
+    <script src="src/data/GameData.js"></script>
+    <script src="src/models/Character.js"></script>
+    <script src="src/models/Companion.js"></script>
+    <script src="src/models/Stats.js"></script>
+    <script src="src/models/Perk.js"></script>
+    <script src="src/services/AIService.js"></script>
+    <script src="src/scenes/BootScene.js"></script>
+    <script src="src/scenes/MainMenuScene.js"></script>
+    <script src="src/scenes/CharacterCreationScene.js"></script>
+    <script src="src/scenes/GameScene.js"></script>
+    <script src="src/scenes/DialogueScene.js"></script>
+    <script src="src/scenes/MapScene.js"></script>
+    <script src="src/scenes/StatsScene.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
