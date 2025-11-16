@@ -1,0 +1,8 @@
+name = "the-long-road-home"
+compatibility_date = "2024-11-16"
+
+[site]
+bucket = "."
+
+# This is a Pages project configuration
+# To deploy: wrangler pages deploy . --project-name=the-long-road-home --branch=main

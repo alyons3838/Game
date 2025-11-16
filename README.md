@@ -121,13 +121,17 @@ The game will open automatically in your default browser.
 
 ### Option 3: Deploy to Web Server
 
-Simply upload all files to any web server or hosting service:
-- GitHub Pages
-- Netlify
-- Vercel
-- Any static hosting service
+The game is configured for easy deployment to multiple platforms. **See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.**
+
+**Quick Deploy Options:**
+- **GitHub Pages** - Already configured! Push to `main` branch and enable GitHub Pages in repository settings
+- **Cloudflare Pages** - Connect your GitHub repo or use `wrangler pages deploy`
+- **Vercel** - Run `vercel` or connect your GitHub repo
+- **Netlify** - Drag & drop deployment or connect your GitHub repo
 
 The game requires no backend—it's entirely client-side!
+
+**Live Demo:** Once deployed, your game will be accessible at your chosen platform's URL.
 
 ## 🤖 AI Integration (Optional)
 
