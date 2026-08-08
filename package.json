@@ -1,24 +1,27 @@
 {
   "name": "the-long-road-home",
-  "version": "0.1.0",
-  "description": "A post-apocalyptic narrative adventure game",
-  "main": "index.js",
-  "scripts": {
-    "start": "npx http-server -p 8080 -o",
-    "dev": "npx http-server -p 8080"
-  },
-  "keywords": [
-    "game",
-    "post-apocalyptic",
-    "narrative",
-    "adventure"
-  ],
-  "author": "",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "A post-apocalyptic branching narrative RPG that runs on mobile, desktop, and TV browsers",
   "license": "MIT",
-  "dependencies": {
-    "phaser": "^3.70.0"
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run check && vite build",
+    "preview": "vite preview",
+    "check": "tsc --noEmit && vitest run",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint:content": "tsx scripts/validate-content.ts",
+    "smoke": "node scripts/smoke.mjs"
   },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "@types/node": "^22.10.2",
+    "jsdom": "^25.0.1",
+    "playwright": "^1.62.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7",
+    "vitest": "^2.1.8"
   }
 }
